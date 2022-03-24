@@ -1,4 +1,4 @@
-class Navbar extends React.Component {
+export default class Navbar extends React.Component {
   render() {
     return <div>
               <div className="background" value="5">
@@ -29,5 +29,3 @@ class Navbar extends React.Component {
            </div>
   }
 }
-
-export default class Navbar;
