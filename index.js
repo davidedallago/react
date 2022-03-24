@@ -64,29 +64,26 @@ class Nav extends React.Component {
               <nav>
                 <ul>
                   <li className='selected'>HOME</li>
-                  <li><a href='#photosection'>{data[0].title}</a></li>
-                  <li><a href='#videosection'>{data[1].title}</a></li>
-                  <li><a href='#graphicsection'>{data[2].title}</a></li>
-                  <li><a href='#webdessection'>{data[3].title}</a></li>
-                  <li><a href='#singupsection'>{data[4].title}</a></li>
+                  {data.map(function(object, i){
+                  return <li>
+                          <a href='#singupsection'>{data[i].title}</a>
+                         </li>;
+                  })}
                 </ul>
               </nav>
 
               <div className="section">
-
                 <div className='homecontainer' id="navbarsec">
                  <h1 className="hometitle">DAVIDE<br/>DAL LAGO</h1>
                 </div>
-
                 <div className='homecontainer' id="logocontainer">
-                  <a href='#photosection' class="nodecoration"><h3>{data[0].title}</h3></a>
-                  <a href='#videosection' class="nodecoration"><h3>{data[1].title}</h3></a>
-                  <a href='#graphicsection' class="nodecoration"><h3>{data[2].title}</h3></a>
-                  <a href='#webdessection' class="nodecoration"><h3>{data[3].title}</h3></a>
-                  <a href='#singupsection' class="nodecoration"><h3>{data[4].title}</h3></a>
+                  {data.map(function(object, i){
+                  return <a href='#singupsection' className="nodecoration">
+                          <h3>{data[i].title}</h3>
+                         </a>;
+                  })}
                 </div>
-
-                </div>
+              </div>
            </div>
   }
 }
@@ -162,39 +159,33 @@ class Footer extends React.Component {
   }
 }
 
+function createApp(){
+  var rows = [];
+  for (var i = 0; i < data.length; i++) {
+    if(i < data.length-1){
+      rows.push(<Section 
+                  title={data[i].title}
+                  description={data[i].description}
+                  components={data[i].components}
+                  viewMore={data[i].viewMore} 
+                />);
+    } else{
+      rows.push(<Footer 
+               title={data[i].title}
+               components={data[i].components}
+      />);
+    }
+  }
+return <div>
+        <Nav />
+        {rows}
+       </div>
+}
+
+
 class App extends React.Component {
   render() {
-    return <div>
-             <Nav />
-             <Section 
-               title={data[0].title}
-               description={data[0].description}
-               components={data[0].components}
-               viewMore={data[0].viewMore}
-              />
-              <Section 
-               title={data[1].title}
-               description={data[1].description}
-               components={data[1].components}
-               viewMore={data[1].viewMore}
-              />
-              <Section 
-               title={data[2].title}
-               description={data[2].description}
-               components={data[2].components}
-               viewMore={data[2].viewMore}
-              />
-              <Section 
-               title={data[3].title}
-               description={data[3].description}
-               components={data[3].components}
-               viewMore={data[3].viewMore}
-              />
-             <Footer 
-               title={data[4].title}
-               components={data[4].components}
-             />
-           </div>
+    return <div>{createApp()}</div>
   }
 }
 
