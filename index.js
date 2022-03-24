@@ -79,7 +79,7 @@ function createApp(){
     }
   }
 return <div>
-        <Nav />
+        <Navbar />
         {rows}
        </div>
 }
