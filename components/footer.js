@@ -1,4 +1,4 @@
-class Footer extends React.Component {
+export default class Footer extends React.Component {
   render() {
     return <div id={data.length-1} className='textcontainer contactstexcontainer fadebackground'>
              <h1 className="containertextprop ">{this.props.title}</h1>
@@ -19,5 +19,3 @@ class Footer extends React.Component {
            </div>
   }
 }
-
-export default class Footer;
