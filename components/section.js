@@ -1,4 +1,4 @@
-class Section extends React.Component {
+export default class Section extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -44,5 +44,3 @@ class Section extends React.Component {
            </div>
   }
 }
-
-export default class Section;
