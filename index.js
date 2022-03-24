@@ -1,6 +1,6 @@
 import Navbar from './components/navbar.js';
 import Section from './components/section.js';
-import Footer from './components/Footer.js';
+import Footer from './components/footer.js';
 //import {data} from './data';
 
 const data = [
