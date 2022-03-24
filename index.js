@@ -1,3 +1,7 @@
+import Navbar from './components/navbar.js';
+import Section from './components/section.js';
+import Footer from './components/Footer.js';
+
 const projectName = 'personal-portfolio';
 
 const data = [
