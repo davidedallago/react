@@ -66,7 +66,7 @@ class Nav extends React.Component {
                   <li className='selected'>HOME</li>
                   {data.map(function(object, i){
                   return <li>
-                          <a href='#singupsection'>{data[i].title}</a>
+                          <a href={'#'+i}>{data[i].title}</a>
                          </li>;
                   })}
                 </ul>
@@ -78,17 +78,15 @@ class Nav extends React.Component {
                 </div>
                 <div className='homecontainer' id="logocontainer">
                   {data.map(function(object, i){
-                  return <a href='#singupsection' className="nodecoration">
-                          <h3>{data[i].title}</h3>
-                         </a>;
+                  return <a href={'#'+i} className="nodecoration">
+                    <h3>{data[i].title}</h3>
+                         </a>
                   })}
                 </div>
               </div>
            </div>
   }
 }
-
-var imageClassName = 'photodim shadowprop'
 
 class Section extends React.Component {
   constructor(props) {
@@ -98,30 +96,30 @@ class Section extends React.Component {
     };
   }
   render() {
-    return <div className="section fadebackground" id="videosection">
+    return <div className="section fadebackground" id={this.props.id}>
               <div className='elementcontainer'>
                 <div className="elementgroupprop photogroupleftdist1 photogroupbottomdist">
-                  <img className={imageClassName} src={this.props.components[0].link}/>
+                  <img className='photodim shadowprop' src={this.props.components[0].link}/>
                   <h3>{this.props.components[0].subTitle}</h3>
                 </div>
                 <div className="elementgroupprop photogroupleftdist2 photogroupbottomdist">
-                  <img className={imageClassName} src={this.props.components[1].link}/>
+                  <img className='photodim shadowprop' src={this.props.components[1].link}/>
                   <h3>{this.props.components[1].subTitle}</h3>
                 </div>
                 <div className="elementgroupprop photogroupleftdist3 photogroupbottomdist">
-                  <img className={imageClassName} src={this.props.components[2].link}/>
+                  <img className='photodim shadowprop' src={this.props.components[2].link}/>
                   <h3>{this.props.components[2].subTitle}</h3>
                 </div>
                 <div className="elementgroupprop photogroupleftdist1 photogrouptopdist">
-                  <img className={imageClassName} src={this.props.components[3].link}/>
+                  <img className='photodim shadowprop' src={this.props.components[3].link}/>
                   <h3>{this.props.components[3].subTitle}</h3>
                 </div>
                 <div className="elementgroupprop photogroupleftdist2 photogrouptopdist">
-                  <img className={imageClassName} src={this.props.components[4].link}/>
+                  <img className='photodim shadowprop' src={this.props.components[4].link}/>
                   <h3>{this.props.components[4].subTitle}</h3>
                 </div>
                 <div className="elementgroupprop photogroupleftdist3 photogrouptopdist">
-                  <img className={imageClassName} src={this.props.components[5].link}/>
+                  <img className='photodim shadowprop' src={this.props.components[5].link}/>
                   <h3>{this.props.components[5].subTitle}</h3>
                 </div>
               </div>
@@ -139,7 +137,7 @@ class Section extends React.Component {
 
 class Footer extends React.Component {
   render() {
-    return <div id='singupsection' className='textcontainer contactstexcontainer fadebackground'>
+    return <div id={data.length-1} className='textcontainer contactstexcontainer fadebackground'>
              <h1 className="containertextprop ">{this.props.title}</h1>
              <a className="nodecoration" href={this.props.components[0].link} target="_blank">
               <p>&#9658;<strong>{" " + this.props.components[0].subTitle}</strong> profile</p>
@@ -164,6 +162,7 @@ function createApp(){
   for (var i = 0; i < data.length; i++) {
     if(i < data.length-1){
       rows.push(<Section 
+                  id={i}
                   title={data[i].title}
                   description={data[i].description}
                   components={data[i].components}
