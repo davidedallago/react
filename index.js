@@ -1,6 +1,14 @@
+// Importing combination
+import React, {Component} from 'react';
+// Importing Module
+import ReactDOM from 'react-dom';
+
 import Navbar from './components/Navbar';
 import Section from './components/Section';
 import Footer from './components/Footer';
+
+// Importing CSS
+import './styles.css';
 
 const data = [
   {
