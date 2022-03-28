@@ -11,6 +11,28 @@ html, body {
     overflow-x: hidden;
 }
 
+a {
+	background: none;
+	color: inherit;
+	border: none;
+	cursor: pointer;
+	outline: inherit;
+}
+
+a:hover{
+  opacity: 75%;
+}
+
+a:active{
+  opacity: 50%;
+}
+
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+  opacity: 100%;
+}
+
 body {
   font-family: 'Poppins';
   font-weight: 300;
