@@ -6,9 +6,14 @@
   box-sizing: border-box;
 }
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: 'Poppins';
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.8em;
+  color: rgba(255, 255, 255, 1);
 }
 
 a {
@@ -27,21 +32,6 @@ a:active{
   opacity: 50%;
 }
 
-a.disabled {
-  pointer-events: none;
-  cursor: default;
-  opacity: 100%;
-}
-
-body {
-  font-family: 'Poppins';
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 1.8em;
-  color: rgba(255, 255, 255, 1);
-}
-
-
 .background{
   background-image: url('https://picsum.photos/id/233/1920/1080?grayscale&blur=4');
   width: 100vw;
@@ -52,68 +42,8 @@ body {
   z-index: -1;
 }
 
-nav {
-  border-radius: 0px;
-  position: absolute;
-  margin-top: 30px;
-  margin-left: 15vw;
-  width: 70vw;
-  z-index: 100;
-  background-color: rgba(20, 20, 20, 0.8);
-  border-top: 1px solid rgba(255, 255, 255, 0.6);
-  opacity: 0.9;
-  padding: 15px;
-  filter: drop-shadow( 0px 0px 30px rgba(255, 255, 255, .4));
-}
-
-nav ul {
-  display: flex;
-  justify-content:space-around;
-  flex-wrap: wrap;
-
-  width: 100%;
-  max-width: 90vw;
-  margin: 0 auto;
-}
-
-nav li {
-  list-style-type: none;
-  text-align: center;
-
-  width: 50%;
-  padding-top: .5em;
-  padding-bottom: .5em;
-}
-
-nav li:nth-of-type(1),
-nav li:nth-of-type(2) {
-  border-top: none;
-}
-
-nav li:nth-of-type(2n) {
-  border-left: 1px solid #888F95;
-}
-
-nav li.selected {
-  color: #FFF;
-}
-
-nav a:link,
-nav a:visited {
-  color: #888F95;
-  text-decoration: none;
-}
-
-nav a:hover,
-nav a:visited:hover,
-nav a:active,
-nav a:visited:active {
-  color: #54A5C4;
-  text-decoration: underline;
-}
-
 .section {
-  height: 100vh;
+  min-height: 100vh;
   opacity: 1;
   display: flex;
   flex-direction: row;
@@ -126,12 +56,10 @@ nav a:visited:active {
 
 .homecontainer {
   width: 50vw;
-
   display: flex;
   align-items: center;
   vertical-align: middle;
   text-align: center;
-
   position: relative;
 }
 
@@ -151,9 +79,7 @@ nav a:visited:active {
   width: 250px;
   opacity: 0.9;
   border-radius: 1000px;
-
   position: absolute;
-
   margin: auto;
   top: 0;
   left: 50px;
@@ -167,7 +93,6 @@ nav a:visited:active {
   align-items: flex-start;
   flex-direction: column;
   position: relative;
-
   margin: auto;
   left: 40px;
   top: 0;
@@ -191,34 +116,26 @@ nav a:visited:active {
 
 .elementcontainer {
   width: 60vw;
-
-  display: flex;
-  position: relative;
-
-  line-height: 50px;
   text-align: center;
+  margin: auto;
 }
 
-.subelementcontainer {
-  width: 100%;
-  height: 50%;
-  position: relative;
+.elementgroupprop {
+  margin: 10px;
+  display: inline-block;
 }
 
 .textcontainer {
   width: 40vw;
   padding: 30px;
-
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   position: relative;
-
   margin: auto;
   top: 0;
   bottom: 0;
-
   line-height: 80px;
 }
 
@@ -237,17 +154,13 @@ nav a:visited:active {
 .singupcontainer {
   width: 50vw;
   height: 100%;
-
   display: flex;
   position: relative;
-
   line-height: 50px;
   text-align: center;
-
   align-items: center;
   flex-direction: column;
   justify-content: center;
-
   margin: auto;
   top: 0;
   bottom: 0;
@@ -255,18 +168,13 @@ nav a:visited:active {
 
 .contactstexcontainer {
   width: 100vw;
-  
-  
   display: flex;
   position: relative;
-
   line-height: 50px;
   text-align: center;
-
   align-items: center;
   flex-direction: column;
   justify-content: center;
-
   margin: auto;
   top: 0;
   bottom: 0;
@@ -322,51 +230,6 @@ p {
   color: rgb(0, 0, 0);
 }
 
-/* Style all font awesome icons */
-.fixedbutton {
-  position: fixed;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  text-align: center;
-  text-decoration: none;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  z-index: 103;
-  font-size: 20px;
-  padding: 30px;
-}
-.fixedbutton:hover {
-  opacity: 0.7;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-}
-
-/* Facebook */
-.fa-instagram {
-  bottom: 120px;
-  left: 20px;
-  border-radius: 100px;
-  }
-.fa-linkedin {
-  bottom: 20px;
-  left: 20px;
-  border-radius: 100px;
-}
-.btn-go-up {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 15px;
-  padding-left: 30px;
-  border: none;
-  width: 100vw;
-  text-align: left;
-  top: 0;
-  left: 0;
-}
-
-.btn-go-up:hover,
-.btn-other:hover,
-input[type=submit]:hover {
-  opacity: 0.5;
-}
-
 .container {
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.2);
@@ -381,31 +244,7 @@ input[type=submit]:hover {
   margin: auto;
 }
 
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: rgba(255, 255, 255, 0.5);
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 2px solid rgba(255, 255, 255, 0.5); /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Submit button */
-input[type=submit] {
-  background-color: rgba(255, 255, 255, 0.5);
-  color: white;
-  padding: 15px 50px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/*Border Debug
+/*Border Debug*/
 .section             { border: 3px solid yellow; }
 .homecontainer       { border: 5px solid violet; }
 .hometitle           { border: 2px solid pink; }
@@ -427,27 +266,32 @@ p                    { border: 2px solid orange; }
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
 
-  nav {
-    margin-top: 0;
-    margin-left: 0;
-    width: 100vw;
-  }
-
   p {
     font-size: 16px;
     line-height: 25px;
+  }
+
+  #logocontainer h3 {
+    padding: 5px;
+    padding-left: 20px;
+    font-size: 15px;
+    border-left: 2px solid white;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+  #logocontainer {
+    height: auto;
+  }
+
+  #navbarsec {
+    height: 200px;
   }
 
   .section {
     height: auto;
     width: 100vw;
     flex-direction: column;
-  }
-
-  #photosection,
-  #graphicsection,
-  #singupsection {
-    flex-direction: column-reverse;
   }
 
   .homecontainer {
@@ -468,14 +312,12 @@ p                    { border: 2px solid orange; }
   }
 
   .elementcontainer {
-    height: 40vh;
     width: 100vw;
     overflow-x: scroll;
     overflow-y: hidden;
   }
 
   .elementgroupprop {
-    display: inline-block;
     height: 50%;
     margin-left: 20px;
     margin-right: 20px;
@@ -490,15 +332,6 @@ p                    { border: 2px solid orange; }
     font-size: 30px;
   }
 
-  .videoelementcontainer {
-    display: none;
-  }
-
-  .singupcontainer {
-    width: 100vw;
-    height: 100vh;
-  }
-
   .container {
     width: 80%;
     height: 80%;
@@ -508,51 +341,14 @@ p                    { border: 2px solid orange; }
     bottom: auto;
   }
 
-  .rightalign,
-  .leftalign {
-    text-align: center;
-    width: 90vw;
-  }
-
   .photodim {
     height: 100%;
   }
-  .video1prop {
-    height: 100%;
-  }
-  .video2prop {
-    height: 100%;
-  }
-  .video3prop {
-    height: 100%;;
-  }
-  .smallphotoprop {
-    height: 100%;
-  }
-  .siteprop {
-    height: 100%;
-  }
-
   .fixedbutton {
     padding: 25px;
   }
-  .fa-instagram {
-    bottom: 10px;
-    left: 90px;
-    border-radius: 50px;
-    }
-  .fa-linkedin {
-    bottom: 10px;
-    left: 10px;
-    border-radius: 50px;
-  }
-
-  #logocontainer,
-  .btn-go-up,
-  ::-webkit-scrollbar {
-    display: none;
-  }
 }
+
 
 
 /* Tablet Styles */
@@ -604,7 +400,6 @@ p                    { border: 2px solid orange; }
   }
 
   .elementcontainer {
-    height: 50vh;
     width: 100vw;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -646,26 +441,6 @@ p                    { border: 2px solid orange; }
   .photodim {
     height: 100%;
   }
-  .video1prop {
-    height: 100%;
-  }
-  .video2prop {
-    height: 100%;
-  }
-  .video3prop {
-    height: 100%;;
-  }
-  .smallphotoprop {
-    height: 100%;
-  }
-  .siteprop {
-    height: 100%;
-  }
-
-  .singupcontainer {
-    width: 100vw;
-    height: 100vh;
-  }
 
   .container {
     width: 80%;
@@ -689,89 +464,15 @@ p                    { border: 2px solid orange; }
     left: 10px;
     border-radius: 50px;
   }
-
-  #logocontainer,
-  .btn-go-up,
-  ::-webkit-scrollbar {
-    display: none;
-  }
-
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-  ::-webkit-scrollbar,
-  nav {
+  ::-webkit-scrollbar {
     display: none;
-  }
-
-  .elementgroupprop {
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
   }
 
   .photodim {
     width: 15vw;
-  }
-
-  .photogroupbottomdist {
-    bottom: 50vh;
-  }
-  .photogrouptopdist {
-    top: 50vh;
-  }
-  .photogroupleftdist1 {
-    left: 2vw;
-  }
-  .photogroupleftdist2 {
-    left: 20vw;
-  }
-  .photogroupleftdist3 {
-    left: 38vw;
-  }
-
-  .videogroup1pos {
-    bottom: 50vh;
-    left: 3vw;
-  }
-  .videogroup2pos {
-    bottom: 25vh;
-    left: 35vw;
-  }
-  .videogroup3pos {
-    top: 50vh;
-    left: 3vw;
-  }
-
-  .video1prop {
-    width: 27vw;
-  }
-  .video2prop {
-    width: 16vw;
-  }
-  .video3prop {
-    width: 27vw;
-  }
-
-  .siteprop {
-    width: 21vw;
-  }
-  .site1pos {
-    bottom: 50vh;
-    left: 4vw;
-  }
-  .site2pos {
-    bottom: 50vh;
-    left: 30vw;
-  }
-  .site3pos {
-    top: 50vh;
-    left: 4vw;
-  }
-  .site4pos {
-    top: 50vh;
-    left: 30vw;
   }
 }
