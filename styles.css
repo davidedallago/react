@@ -213,7 +213,7 @@ a:active{
   background-color: rgba(255, 255, 255, .2);
 }
 
-/*Border Debug*/
+/*Border Debug
 .section             { border: 3px solid yellow; }
 .homecontainer       { border: 5px solid violet; }
 .hometitle           { border: 2px solid pink; }
