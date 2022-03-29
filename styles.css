@@ -15,8 +15,8 @@ body {
 }
 
 a {
+  color: inherit;
 	background: none;
-	color: inherit;
 	border: none;
 	cursor: pointer;
 	outline: inherit;
@@ -198,7 +198,7 @@ a:active{
 }
 
 .navSectionTitle:hover {
-  background-color: rgba(255, 255, 255, .2);
+  background: linear-gradient(180deg, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0) 100%);
 }
 
 .photodim {
