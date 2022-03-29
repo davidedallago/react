@@ -35,11 +35,11 @@ const data = [
   {*/
     title:"WEB DESIGN",
     description:"Whether it's a company, a restaurant, an interior design shop or your own portfolio or blog, I have the right solution for you.",
-    components:[{subTitle:"WEATHER", imgLink:"https://picsum.photos/id/530/300/200", link:"https://davidedallago.github.io/weathernow/"},
-                {subTitle:"TRIBUTE", imgLink:"https://picsum.photos/id/531/300/200", link:"https://davidedallago.github.io/tribute-page/"},
-                {subTitle:"LANDING", imgLink:"https://picsum.photos/id/532/300/200", link:"https://davidedallago.github.io/landing-page/"},
-                {subTitle:"DOCUMENTATION", imgLink:"https://picsum.photos/id/533/300/200", link:"https://davidedallago.github.io/documentation-page/"},
-                {subTitle:"SURVEY", imgLink:"https://picsum.photos/id/534/300/200", link:"https://davidedallago.github.io/survey-form/"}],
+    components:[{subTitle:"WEATHER", imgLink:"./img/web-design/weather.png", link:"https://davidedallago.github.io/weathernow/"},
+                {subTitle:"TRIBUTE", imgLink:"./img/web-design/tribute.png", link:"https://davidedallago.github.io/tribute-page/"},
+                {subTitle:"LANDING", imgLink:"./img/web-design/landing.png", link:"https://davidedallago.github.io/landing-page/"},
+                {subTitle:"DOCUMENTATION", imgLink:"./img/web-design/documentation.png", link:"https://davidedallago.github.io/documentation-page/"},
+                {subTitle:"SURVEY", imgLink:"./img/web-design/survey.png", link:"https://davidedallago.github.io/survey-form/"}],
     viewMore:"https://github.com/davidedallago/"
   },
   {
