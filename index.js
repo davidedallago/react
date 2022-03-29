@@ -90,13 +90,13 @@ class Section extends React.Component {
                 <h1 className="containertextprop">{this.props.title}</h1>
                 <p id="sectionParagraph">{this.props.description}</p>
                 <div>
-                  <a className="btn-other" href={this.props.viewMore}>VIEW MORE</a>
+                  <a className="btn-other nodecoration" href={this.props.viewMore}>VIEW MORE</a>
                 </div>
               </div>
 
               <div className='elementcontainer'>
                 {this.props.components.map(function(object, i){
-                  return <a className="elementgroupprop" href={object.link}>
+                  return <a className="elementgroupprop nodecoration" href={object.link}>
                           <img className='subElementImg photodim shadowprop' src={object.imgLink}/>
                           <h3 className="subElementTitle">{object.subTitle}</h3>
                          </a>
