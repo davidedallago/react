@@ -69,7 +69,7 @@ const projectName = 'personal-portfolio';
 class Navbar extends React.Component {
   render() {
     return <div>
-              <div className="background" value="5">
+              <div className="background">
               </div>
 
               <div className="section">

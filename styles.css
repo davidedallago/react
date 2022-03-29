@@ -40,6 +40,10 @@ a:active{
   top: 0px;
   left: 0px;
   z-index: -1;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .section {
@@ -236,7 +240,7 @@ p {
   margin: auto;
 }
 
-/*Border Debug
+/*Border Debug*/
 .section             { border: 3px solid yellow; }
 .homecontainer       { border: 5px solid violet; }
 .hometitle           { border: 2px solid pink; }
@@ -340,7 +344,7 @@ p                    { border: 2px solid orange; }
   #sectionTitle {
     font-size: 24px;
     letter-spacing: 1px;
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   #sectionParagraph {
