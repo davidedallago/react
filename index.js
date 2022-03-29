@@ -80,7 +80,7 @@ class Navbar extends React.Component {
                <div className='homecontainer'>
                 <h1 className="hometitle">DAVIDE<br/>DAL LAGO</h1>
                </div>
-               <div className='homecontainer' id="logocontainer">
+               <div className='homecontainer elementcontainer' id="logocontainer">
                  {data.map(function(object, i){
                  return <a href={'#'+i} className="nodecoration">
                          <h3 className="navSectionTitle">{data[i].title}</h3>

@@ -54,6 +54,7 @@ a:active{
 
 .homecontainer {
   width: 50vw;
+  height: auto;
   display: flex;
   align-items: center;
   vertical-align: middle;
@@ -205,8 +206,8 @@ a:active{
   width: 100%;
 }
 
-.fixedbutton {
-  padding: 25px;
+.footerLink {
+  margin-bottom: 20px;
 }
 
 /*Border Debug
@@ -328,15 +329,14 @@ p                    { border: 2px solid orange; }
   }
 
   .section {
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     margin-top: 25px;
     padding: 100px 0px 100px 0px;
   }
 
   .homecontainer {
-    width: 100%;
-    height: 250px;
+    width: 100%;  
   }
 
   #logocontainer {
@@ -349,7 +349,7 @@ p                    { border: 2px solid orange; }
   }
   
   .hometitle {
-    font-size: 80px;
+    font-size: 70px;
     line-height: 80px;
     letter-spacing: 15px;
     text-align: center;
@@ -360,16 +360,17 @@ p                    { border: 2px solid orange; }
     width: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
+    border-left: 2px solid rgba(255, 255, 255, .2);
   }
 
   .elementgroupprop {
     width: 40%;
-    max-width: 350px;
+    max-width: 225px;
     margin: 25px;
   }
 
   .subElementTitle {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .textcontainer {
@@ -401,8 +402,4 @@ p                    { border: 2px solid orange; }
     line-height: 40px;
     margin-bottom: 30px;
   }  
-
-  .footerLink {
-    margin-bottom: 20px;
-  }
 }
