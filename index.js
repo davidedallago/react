@@ -68,23 +68,18 @@ const projectName = 'personal-portfolio';
 
 class Navbar extends React.Component {
   render() {
-    return <div>
-              <div className="background">
-              </div>
-
-              <div className="section">
-                <div className='homecontainer' id="navbarsec">
-                 <h1 className="hometitle">DAVIDE<br/>DAL LAGO</h1>
-                </div>
-                <div className='homecontainer' id="logocontainer">
-                  {data.map(function(object, i){
-                  return <a href={'#'+i} className="nodecoration">
-                          <h3>{data[i].title}</h3>
-                         </a>
-                  })}
-                </div>
-              </div>
-           </div>
+    return <div id="navBar" className="section">
+               <div className='homecontainer' id="navbarsec">
+                <h1 className="hometitle">DAVIDE<br/>DAL LAGO</h1>
+               </div>
+               <div className='homecontainer' id="logocontainer">
+                 {data.map(function(object, i){
+                 return <a href={'#'+i} className="nodecoration">
+                         <h3 className="navSectionTitle">{data[i].title}</h3>
+                        </a>
+                 })}
+               </div>
+            </div>
   }
 }
 

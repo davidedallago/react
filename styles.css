@@ -13,7 +13,8 @@ body {
   font-weight: 300;
   font-size: 18px;
   line-height: 1.8em;
-  color: rgba(255, 255, 255, 1);
+  color: white;
+  background-color: transparent;
 }
 
 a {
@@ -32,7 +33,7 @@ a:active{
   opacity: 50%;
 }
 
-.background{
+#background{
   background-image: url('https://picsum.photos/id/233/1920/1080?grayscale&blur=4');
   width: 100vw;
   height: 100vh;
@@ -40,10 +41,15 @@ a:active{
   top: 0px;
   left: 0px;
   z-index: -1;
+
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+#navBar {
+  min-height: auto;
 }
 
 .section {
@@ -97,25 +103,6 @@ a:active{
   align-items: flex-start;
   flex-direction: column;
   position: relative;
-  margin: auto;
-  left: 40px;
-  top: 0;
-  bottom: 0;
-}
-#logocontainer a {
-  width: 50%;
-}
-#logocontainer h3 {
-  padding: 20px;
-  padding-left: 50px;
-  font-size: 30px;
-  border-left: 2px solid white;
-  width: 100%;
-  letter-spacing: 10px;
-}
-
-#logocontainer h3:hover {
-  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .elementcontainer {
@@ -186,15 +173,7 @@ a:active{
 
 
 
-h3 {
-  font-size: 18px;
-  font-weight: 200;
-  letter-spacing: 3px;
-  line-height: 70px;
-  color: #FFF;
-  text-shadow: 20px 20px 8px rgba(0, 0, 0, 1);
-  z-index: 99;
-}
+
 
 p {
   font-size: 22px;
@@ -240,6 +219,19 @@ p {
   margin: auto;
 }
 
+.navSectionTitle {
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: 3px;
+  color: #FFF;
+  text-shadow: 20px 20px 8px rgba(0, 0, 0, 1);
+  z-index: 99;
+}
+
+.navSectionTitle:hover {
+  background-color: rgba(255, 255, 255, .2);
+}
+
 /*Border Debug*/
 .section             { border: 3px solid yellow; }
 .homecontainer       { border: 5px solid violet; }
@@ -267,17 +259,12 @@ p                    { border: 2px solid orange; }
     line-height: 25px;
   }
 
-  #logocontainer h3 {
-    padding: 5px;
-    padding-left: 20px;
-    font-size: 15px;
-    border-left: 2px solid white;
-    width: 100%;
-    letter-spacing: 2px;
-}
-
   #logocontainer {
     height: auto;
+    text-align: left;
+    display: block;
+    flex-direction: unset;
+    align-items: unset;
   }
 
   #navbarsec {
@@ -345,6 +332,13 @@ p                    { border: 2px solid orange; }
     font-size: 24px;
     letter-spacing: 1px;
     margin-top: 20px;
+  }
+
+  .navSectionTitle {
+    font-size: 15px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
   }
 
   #sectionParagraph {
