@@ -47,7 +47,7 @@ const data = [
     description:"Whether it's a company, a restaurant, an interior design shop or your own portfolio or blog, I have the right solution for you.",
     components:[{subTitle:"CALCULATOR", imgLink:"./img/applications/calculator.png", link:"https://davidedallago.github.io/javascript-calculator/"},
                 {subTitle:"TIMER", imgLink:"./img/applications/timer.png", link:"https://davidedallago.github.io/timer/"},
-                {subTitle:"MARKDOWN PREVIEWER", imgLink:"./img/applications/markdown-previewer.png", link:"https://davidedallago.github.io/markdown-previewer/"},
+                {subTitle:"MARKDOWN VIEWER", imgLink:"./img/applications/markdown-previewer.png", link:"https://davidedallago.github.io/markdown-previewer/"},
                 {subTitle:"QUOTE MACHINE", imgLink:"./img/applications/quote-machine.png", link:"https://davidedallago.github.io/quote-machine/"},
                 {subTitle:"DRUM MACHINE", imgLink:"./img/applications/drum-machine.png", link:"https://davidedallago.github.io/drum-machine/"}],
     viewMore:"https://github.com/davidedallago/"
