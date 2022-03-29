@@ -1,6 +1,6 @@
 const data = [
   {
-    title:"PHOTO",
+    /*title:"PHOTO",
     description:'Nature, portraits, fashion, shops, sports, urban or cars. Photo shoots and image manipulation using tools such as Photoshop or Lightroom.',
     components:[{subTitle:"URBAN", imgLink:"https://picsum.photos/id/230/300/200"},
                 {subTitle:"PORTRAIT", imgLink:"https://picsum.photos/id/231/300/200"},
@@ -32,7 +32,7 @@ const data = [
                 {subTitle:"PHOTOSHOP", imgLink:"https://picsum.photos/id/435/300/200"}],
     viewMore:"https://www.instagram.com/davide.dallago/"
   },
-  {
+  {*/
     title:"WEB DESIGN",
     description:"Whether it's a company, a restaurant, an interior design shop or your own portfolio or blog, I have the right solution for you.",
     components:[{subTitle:"PORTFOLIO", imgLink:"https://picsum.photos/id/530/300/200"},
