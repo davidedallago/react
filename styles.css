@@ -365,8 +365,8 @@ p                    { border: 2px solid orange; }
 
   .elementgroupprop {
     width: 40%;
-    max-width: 225px;
-    margin: 25px;
+    max-width: 200px;
+    margin: 20px;
   }
 
   .subElementTitle {
