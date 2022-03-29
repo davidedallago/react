@@ -55,11 +55,11 @@ const data = [
   {
     title:"GRAPHS",
     description:"Creation of varius graphs type based on the type of datas and requests.",
-    components:[{subTitle:"TREE MAP", imgLink:"https://picsum.photos/id/730/300/200", link:"https://davidedallago.github.io/tree-map/"},
-                {subTitle:"CHOROPLETH MAP", imgLink:"https://picsum.photos/id/731/300/200", link:"https://davidedallago.github.io/choropleth-map/"},
-                {subTitle:"HEAT MAP", imgLink:"https://picsum.photos/id/738/300/200", link:"https://davidedallago.github.io/heat-map/"},
-                {subTitle:"SCATTER PLOT", imgLink:"https://picsum.photos/id/733/300/200", link:"https://davidedallago.github.io/scatter-plot/"},
-                {subTitle:"BAR CHART", imgLink:"https://picsum.photos/id/735/300/200", link:"https://davidedallago.github.io/bar-chart/"}],
+    components:[{subTitle:"TREE MAP", imgLink:"./img/graphs/tree-map.png", link:"https://davidedallago.github.io/tree-map/"},
+                {subTitle:"CHOROPLETH MAP", imgLink:"./img/graphs/choropleth-map.png", link:"https://davidedallago.github.io/choropleth-map/"},
+                {subTitle:"HEAT MAP", imgLink:"./img/graphs/heat-map.png", link:"https://davidedallago.github.io/heat-map/"},
+                {subTitle:"SCATTER PLOT", imgLink:"./img/graphs/scatter-plot.png", link:"https://davidedallago.github.io/scatter-plot/"},
+                {subTitle:"BAR CHART", imgLink:"./img/graphs/bar-chart.png", link:"https://davidedallago.github.io/bar-chart/"}],
     viewMore:"https://github.com/davidedallago/"
   },
   {
