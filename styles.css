@@ -31,7 +31,7 @@ a:active{
 }
 
 #background{
-  background-image: url('https://picsum.photos/id/233/1920/1080?grayscale&blur=4');
+  background-image: url('https://picsum.photos/id/1021/1920/1080?grayscale&blur=1');
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -213,7 +213,7 @@ a:active{
   background-color: rgba(255, 255, 255, .2);
 }
 
-/*Border Debug
+/*Border Debug*/
 .section             { border: 3px solid yellow; }
 .homecontainer       { border: 5px solid violet; }
 .hometitle           { border: 2px solid pink; }
