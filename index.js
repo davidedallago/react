@@ -92,8 +92,8 @@ class Section extends React.Component {
   render() {
     return <div className="section fadebackground" id={this.props.id}>
               <div className='textcontainer'>
-                <h1 className="containertextprop leftalign">{this.props.title}</h1>
-                <p className="leftalign">{this.props.description}</p>
+                <h1 id="sectionTitle" className="containertextprop leftalign">{this.props.title}</h1>
+                <p id="sectionParagraph" className="leftalign">{this.props.description}</p>
                 <div className="leftalign">
                   <a className="btn-other" href={this.props.viewMore}>VIEW MORE</a>
                 </div>
@@ -102,8 +102,8 @@ class Section extends React.Component {
               <div className='elementcontainer'>
                 {this.props.components.map(function(object, i){
                   return <a className="elementgroupprop" href={object.link}>
-                          <img className='photodim shadowprop' src={object.imgLink}/>
-                          <h3>{object.subTitle}</h3>
+                          <img id="subElementImg" className='photodim shadowprop' src={object.imgLink}/>
+                          <h3 id="subElementTitle">{object.subTitle}</h3>
                          </a>
                 })}
               </div>

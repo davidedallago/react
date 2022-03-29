@@ -180,15 +180,7 @@ a:active{
   bottom: 0;
 }
 
-.rightalign {
-  text-align: right;
-  width: 100%;
-}
 
-.leftalign {
-  text-align: left;
-  width: 100%;
-}
 
 h3 {
   font-size: 18px;
@@ -292,6 +284,7 @@ p                    { border: 2px solid orange; }
     height: auto;
     width: 100vw;
     flex-direction: column;
+    text-align: center;
   }
 
   .homecontainer {
@@ -313,23 +306,26 @@ p                    { border: 2px solid orange; }
 
   .elementcontainer {
     width: 100vw;
-    overflow-x: scroll;
+    overflow-x: hidden;
     overflow-y: hidden;
   }
 
   .elementgroupprop {
-    height: 50%;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: fit-content;
+  }
+
+  #subElementTitle {
+    font-size: 12px;
+    width: 100px;
+    line-height: 20px;
+    text-align: center;
   }
 
   .textcontainer {
-    height: 80vh;
-    width: 100vw;
-  }
-
-  .containertextprop {
-    font-size: 30px;
+    height: auto;
+    width: 100%;
   }
 
   .container {
@@ -340,10 +336,21 @@ p                    { border: 2px solid orange; }
     right: 0;
     bottom: auto;
   }
+  
+  #sectionTitle {
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin-top: 50px;
+  }
+
+  #sectionParagraph {
+    letter-spacing: 1px;
+  }
 
   .photodim {
-    height: 100%;
+    width: 120px;
   }
+
   .fixedbutton {
     padding: 25px;
   }
@@ -361,11 +368,6 @@ p                    { border: 2px solid orange; }
     margin-left: 0;
     width: 100vw;
     z-index: 100;
-  }
-
-  .rightalign,
-  .leftalign {
-    text-align: center;
   }
 
   .section {
@@ -474,5 +476,15 @@ p                    { border: 2px solid orange; }
 
   .photodim {
     width: 15vw;
+  }
+
+  .rightalign {
+    text-align: right;
+    width: 100%;
+  }
+  
+  .leftalign {
+    text-align: left;
+    width: 100%;
   }
 }
