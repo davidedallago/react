@@ -87,9 +87,9 @@ class Section extends React.Component {
   render() {
     return <div className="section fadebackground" id={this.props.id}>
               <div className='textcontainer'>
-                <h1 id="sectionTitle" className="containertextprop leftalign">{this.props.title}</h1>
-                <p id="sectionParagraph" className="leftalign">{this.props.description}</p>
-                <div className="leftalign">
+                <h1 className="containertextprop">{this.props.title}</h1>
+                <p id="sectionParagraph">{this.props.description}</p>
+                <div>
                   <a className="btn-other" href={this.props.viewMore}>VIEW MORE</a>
                 </div>
               </div>
@@ -97,8 +97,8 @@ class Section extends React.Component {
               <div className='elementcontainer'>
                 {this.props.components.map(function(object, i){
                   return <a className="elementgroupprop" href={object.link}>
-                          <img id="subElementImg" className='photodim shadowprop' src={object.imgLink}/>
-                          <h3 id="subElementTitle">{object.subTitle}</h3>
+                          <img className='subElementImg photodim shadowprop' src={object.imgLink}/>
+                          <h3 className="subElementTitle">{object.subTitle}</h3>
                          </a>
                 })}
               </div>
@@ -108,8 +108,8 @@ class Section extends React.Component {
 
 class Footer extends React.Component {
   render() {
-    return <div id={length-1} className='textcontainer contactstexcontainer fadebackground'>
-             <h1 className="containertextprop ">{this.props.title}</h1>
+    return <div id={data.length-1} className='textcontainer contactstexcontainer fadebackground'>
+             <h1 className="containertextprop">{this.props.title}</h1>
              <a className="nodecoration" href={this.props.components[0].imgLink} target="_blank">
               <p>&#9658;<strong>{" " + this.props.components[0].subTitle}</strong> profile</p>
              </a>
