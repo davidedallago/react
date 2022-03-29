@@ -35,12 +35,11 @@ const data = [
   {*/
     title:"WEB DESIGN",
     description:"Whether it's a company, a restaurant, an interior design shop or your own portfolio or blog, I have the right solution for you.",
-    components:[{subTitle:"PORTFOLIO", imgLink:"https://picsum.photos/id/530/300/200"},
-                {subTitle:"FASHION", imgLink:"https://picsum.photos/id/531/300/200"},
-                {subTitle:"BLOG", imgLink:"https://picsum.photos/id/532/300/200"},
-                {subTitle:"E-COMMERCE", imgLink:"https://picsum.photos/id/533/300/200"},
-                {subTitle:"TRIBUTE", imgLink:"https://picsum.photos/id/534/300/200"},
-                {subTitle:"LANDING", imgLink:"https://picsum.photos/id/535/300/200"}],
+    components:[{subTitle:"WEATHER", imgLink:"https://picsum.photos/id/530/300/200", link:"https://davidedallago.github.io/weathernow/"},
+                {subTitle:"TRIBUTE", imgLink:"https://picsum.photos/id/531/300/200", link:"https://davidedallago.github.io/tribute-page/"},
+                {subTitle:"LANDING", imgLink:"https://picsum.photos/id/532/300/200", link:"https://davidedallago.github.io/landing-page/"},
+                {subTitle:"DOCUMENTATION", imgLink:"https://picsum.photos/id/533/300/200", link:"https://davidedallago.github.io/documentation-page/"},
+                {subTitle:"SURVEY", imgLink:"https://picsum.photos/id/534/300/200", link:"https://davidedallago.github.io/survey-form/"}],
     viewMore:"https://github.com/davidedallago/"
   },
   {
@@ -50,8 +49,17 @@ const data = [
                 {subTitle:"TIMER", imgLink:"https://picsum.photos/id/631/300/200", link:"https://davidedallago.github.io/timer/"},
                 {subTitle:"MARKDOWN PREVIEWER", imgLink:"https://picsum.photos/id/638/300/200", link:"https://davidedallago.github.io/markdown-previewer/"},
                 {subTitle:"QUOTE MACHINE", imgLink:"https://picsum.photos/id/633/300/200", link:"https://davidedallago.github.io/quote-machine/"},
-                {subTitle:"DRUM MACHINE", imgLink:"https://picsum.photos/id/634/300/200", link:"https://davidedallago.github.io/drum-machine/"},
-                {subTitle:"APP 6", imgLink:"https://picsum.photos/id/635/300/200"}],
+                {subTitle:"DRUM MACHINE", imgLink:"https://picsum.photos/id/634/300/200", link:"https://davidedallago.github.io/drum-machine/"}],
+    viewMore:"https://github.com/davidedallago/"
+  },
+  {
+    title:"GRAPHS",
+    description:"Creation of varius graphs type based on the type of datas and requests.",
+    components:[{subTitle:"TREE MAP", imgLink:"https://picsum.photos/id/730/300/200", link:"https://davidedallago.github.io/tree-map/"},
+                {subTitle:"CHOROPLETH MAP", imgLink:"https://picsum.photos/id/731/300/200", link:"https://davidedallago.github.io/choropleth-map/"},
+                {subTitle:"HEAT MAP", imgLink:"https://picsum.photos/id/738/300/200", link:"https://davidedallago.github.io/heat-map/"},
+                {subTitle:"SCATTER PLOT", imgLink:"https://picsum.photos/id/733/300/200", link:"https://davidedallago.github.io/scatter-plot/"},
+                {subTitle:"BAR CHART", imgLink:"https://picsum.photos/id/735/300/200", link:"https://davidedallago.github.io/bar-chart/"}],
     viewMore:"https://github.com/davidedallago/"
   },
   {
