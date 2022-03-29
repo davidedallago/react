@@ -34,7 +34,7 @@ const data = [
   },
   {*/
     title:"WEB DESIGN",
-    description:"Whether it's a company, a restaurant, an interior design shop or your own portfolio or blog, I have the right solution for you.",
+description:"Whether it's a company, a restaurant, an interior design shop or your own portfolio or blog, I have the right solution for you.",
     components:[{subTitle:"WEATHER", imgLink:"./img/web-design/weather.png", link:"https://davidedallago.github.io/weathernow/"},
                 {subTitle:"TRIBUTE", imgLink:"./img/web-design/tribute.png", link:"https://davidedallago.github.io/tribute-page/"},
                 {subTitle:"LANDING", imgLink:"./img/web-design/landing.png", link:"https://davidedallago.github.io/landing-page/"},
@@ -44,7 +44,7 @@ const data = [
   },
   {
     title:"APPLICATIONS",
-    description:"Whether it's a company, a restaurant, an interior design shop or your own portfolio or blog, I have the right solution for you.",
+    description:"Written with JavaScript and React framework, open source and powerful libraries suitable for any kind of requirement.",
     components:[{subTitle:"CALCULATOR", imgLink:"./img/applications/calculator.png", link:"https://davidedallago.github.io/javascript-calculator/"},
                 {subTitle:"TIMER", imgLink:"./img/applications/timer.png", link:"https://davidedallago.github.io/timer/"},
                 {subTitle:"MARKDOWN VIEWER", imgLink:"./img/applications/markdown-previewer.png", link:"https://davidedallago.github.io/markdown-previewer/"},
@@ -54,7 +54,7 @@ const data = [
   },
   {
     title:"GRAPHS",
-    description:"Creation of varius graphs type based on the type of datas and requests.",
+    description:"Creation of various type of graphs based on the datas and requests, either corporal or public information.",
     components:[{subTitle:"TREE MAP", imgLink:"./img/graphs/tree-map.png", link:"https://davidedallago.github.io/tree-map/"},
                 {subTitle:"CHOROPLETH MAP", imgLink:"./img/graphs/choropleth-map.png", link:"https://davidedallago.github.io/choropleth-map/"},
                 {subTitle:"HEAT MAP", imgLink:"./img/graphs/heat-map.png", link:"https://davidedallago.github.io/heat-map/"},
