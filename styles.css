@@ -103,7 +103,6 @@ a:active{
 .elementgroupprop {
   margin: 10px;
   display: inline-block;
-
 }
 
 .textcontainer {
@@ -402,4 +401,8 @@ p                    { border: 2px solid orange; }
     line-height: 40px;
     margin-bottom: 30px;
   }  
+
+  .footerLink {
+    margin-bottom: 20px;
+  }
 }
