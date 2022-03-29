@@ -69,7 +69,7 @@ const projectName = 'personal-portfolio';
 class Navbar extends React.Component {
   render() {
     return <div id="navBar" className="section">
-               <div className='homecontainer' id="navbarsec">
+               <div className='homecontainer'>
                 <h1 className="hometitle">DAVIDE<br/>DAL LAGO</h1>
                </div>
                <div className='homecontainer' id="logocontainer">
